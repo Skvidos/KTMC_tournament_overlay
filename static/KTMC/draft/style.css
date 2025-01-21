@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+body,
+html {
+	padding: 0;
+	margin: 0;
+	/* overflow-y: hidden; */
+}
+
+:root {
+	--width: 1920px;
+	--height: 1080px;
+	--footer-height: 160px;
+}
+
+.main {
+	position: relative;
+	width: var(--width);
+	height: var(--height);
+	color: var(--light);
+	font-family: 'Dela Gothic One';
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-box-shadow:inset 0px 0px 200px 1px var(--accent);
+  -moz-box-shadow:inset 0px 0px 200px 1px var(--accent);
+  box-shadow:inset 0px 0px 200px 1px var(--accent);
+	z-index: 1;
+}
+
+.header {
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+	z-index: 2;
+}
+
+.header-logo
+{
+	display: block;
+	background-image: url('../_shared/assets/logobgless.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 250px;
+	margin: 0 35px;
+	filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.header-left {
+	display: block;
+	width: 50%;
+	height: 0px;
+	border-top: 100px solid var(--accent);
+	border-right: 50px solid transparent;
+	position: relative;
+}
+
+.header-left::after {
+	content: '';
+	position: absolute;
+	top: -100px;
+	left: 0;
+	display: block;
+	width: 99%;
+	height: 0px;
+	border-top: 80px solid var(--accent-text);
+	border-right: 45px solid transparent;
+}
+
+.header-text_left {
+	position: absolute;
+	top: -100px;
+	left: 110px;
+	z-index: 100;
+	width: 100%;
+	font-size: 55px;
+	color: var(--accent);
+}
+
+.header-right {
+	display: block;
+	width: 50%;
+	height: 0px;
+	border-top: 100px solid var(--accent);
+	border-left: 50px solid transparent;
+	position: relative;
+}
+
+.header-right::after {
+	content: '';
+	position: absolute;
+	top: -100px;
+	right: 0px;
+	display: block;
+	width: 99%;
+	height: 0px;
+	border-top: 80px solid var(--accent-text);
+	border-left: 45px solid transparent;
+}
+
+.header-text_right {
+	position: absolute;
+	top: -100px;
+	right: 110px;
+	z-index: 100;
+	width: 100%;
+	font-size: 55px;
+	color: var(--accent);
+	text-align: end;
+}
+
+.content
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+	text-shadow: 0 0 8px rgba(5, 5, 5, 0.15);
+	z-index: 100;
+}
+
+.content-right-inner {
+	width: 560px;
+	margin-right: 100px;
+}
+
+.content-left {
+	width: 870px;
+}
+
+.players-title {
+	font-size: 65px;
+}
+
+.player-block {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+}
+
+.player-header {
+	display: flex;
+	padding: 10px 0;
+	border-bottom: 5px solid;
+}
+
+.player-seed_text {
+	width: 70px;
+	color: var(--accent-text);
+}
+
+.player-name_text {
+	width: 210px;
+}
+
+.player-item {
+	display: flex;
+	padding: 2px 0;
+}
+
+.player-seed {
+	width: 70px;
+	color: var(--accent-text);
+}
+
+.player-list_block {
+	display: flex;
+}
+
+.player-list {
+	width: 320px;
+}
+
+.selected {
+	opacity: .3;
+}
+
+.group-title
+{
+	font-size: 65px;
+	text-align: end;
+}
+
+.group-container {
+	display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.group-block {
+	display: flex;
+	flex-direction: column;
+	width: 260px;
+	border-top: 5px solid var(--accent-text);
+	border-left: 5px solid var(--accent-text);
+	border-right: 5px solid var(--accent-text);
+	background-color: var(--accent);
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.group_name {
+	background-color: var(--accent-text);
+	display: flex;
+	padding: 5px 5px;
+	font-size: 20px;
+	color: var(--accent);
+}
+
+.group-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.group-container-inner {
+	margin-right: 20px;
+}
+
+.group-seed {
+	width: 80px;
+}
+
+.group-captain {
+	width: 255px;
+}
+
+.group-teammates {
+	display: block;
+}
+
+.group-teammate {
+	display: flex;
+	padding: 10px 10px;
+	border-bottom: 5px solid var(--accent-text);
+}
+.group-teammate_seed {
+	width: 80px;
+}
+
+.group-teammate_name {
+	width: 310px;
+}
+
+.discord-title
+{
+	font-size: 65px;
+}
+
+.discord {
+	display: block;
+	height: 100px;
+	width: 560px;
+	background-color: #00ff00;
+	border-radius: 10px;
+}
+
+
+.map-mods {
+	display: flex;
+	font-weight: bold;
+	font-size: 4.7rem;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	color: var(--light);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-shadow: 0 0 8px rgba(5, 5, 5, 0.15);
+	filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+}
+.now-playing {
+	right: 1120px;
+	text-align: right;
+	justify-content: flex-end;
+}
+.footer {
+	position: relative;
+	display: flex;
+	height: var(--footer-height);
+}
+
+.map-background-container {
+	width: 500px;
+	height: 100%;
+	position: relative;
+	background-color: var(--dark);
+}
+
+.map-background {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(7px) brightness(80%);
+	transform: scale(1.4);
+}
+
+.map-background::before
+{
+	content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.map-stats-container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.map-stats {
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	text-shadow: 0 0 8px rgba(5, 5, 5, 0.15);
+	filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.map-stats-title {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5rem;
+	width: 1000px;
+	text-wrap: balance;
+	padding-left: 20px;
+}
+
+.map-song-preview
+{
+	width: 110px;
+	height: 110px;
+	background-color: black;
+	border-radius: 30px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.map-stats-text
+{
+	color: var(--accent-text);
+}
+
+.logo {
+	background-image: url('../_shared/assets/dapohui.png');
+	transform: scale(-1, 1);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: -180px;
+	height: 550px;
+	width: 235px;
+	right: 20px;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.add {
+	color: var(--accent-text);
+	display: flex;
+  align-items: center;
+  justify-content: flex-end;
+	height: 85px;
+}
+
+
+.add_block {
+	position: absolute;
+	right: -400px;
+	top: 10px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.add_block1 {
+	background-color: var(--accent);
+	padding: 20px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	align-items: center;
+}
+
+.add_block2 {
+	background-color: var(--accent);
+	padding: 20px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.add_label2 {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	color: var(--accent-text);
+}
+
+.add_input {
+	padding: 10px;
+	margin-bottom: 5px;
+	font-size: 1.5rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.add_button {
+	padding: 5px;
+	font-size: 1.5rem;
+	font-family: 'Dela Gothic One';
+	width: 300px;
+	height: 70px;
+	margin-top: 10px;
+}
+
+.quick_buttons {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
+.add_number {
+	color: white;
+	padding: 0 20px;
+}
+.add_label {
+	color: var(--accent-text);
+}

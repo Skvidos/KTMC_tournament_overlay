@@ -1,0 +1,62 @@
+[
+    {
+        "time": 17276184000000,
+        "red_team": "Ukraine",
+        "red_seed": 15,
+        "red_flag": "UA",
+        "blue_team": "Singapore",
+        "blue_seed": 4,
+        "blue_flag": "SG",
+        "streamer": "",
+        "stream": "",
+        "type": "L"
+    },
+    {
+        "time": 17276184000000,
+        "red_team": "United Kingdom",
+        "red_seed": 8,
+        "red_flag": "GB",
+        "blue_team": "Singapore",
+        "blue_seed": 4,
+        "blue_flag": "SG",
+        "streamer": "",
+        "stream": "",
+        "type": "L"
+    },
+    {
+        "time": 17276184000000,
+        "red_team": "Ukraine",
+        "red_seed": 15,
+        "red_flag": "UA",
+        "blue_team": "Singapore",
+        "blue_seed": 4,
+        "blue_flag": "SG",
+        "streamer": "FrauOn",
+        "stream": "",
+        "type": "L"
+    },
+    {
+        "time": 17276184000000,
+        "red_team": "Ukraine",
+        "red_seed": 15,
+        "red_flag": "UA",
+        "blue_team": "Australia",
+        "blue_seed": 20,
+        "blue_flag": "AU",
+        "streamer": "",
+        "stream": "",
+        "type": "L"
+    },
+    {
+        "time": 17276571000000,
+        "red_team": "Argentina",
+        "red_seed": 14,
+        "red_flag": "AR",
+        "blue_team": "Brazil",
+        "blue_seed": 1,
+        "blue_flag": "BR",
+        "streamer": "",
+        "stream": "",
+        "type": "W"
+    }
+]

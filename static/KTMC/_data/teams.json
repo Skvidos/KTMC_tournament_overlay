@@ -1,0 +1,266 @@
+[
+    {
+        "team": "pudge",
+        "flag": "KTM1",
+        "seed": 30,
+        "players": [
+            {
+                "id": 25788013,
+                "username": "just_remo4ka",
+                "captain": true
+            },
+            {
+                "id": 15288174,
+                "username": "neilyas",
+                "captain": false
+            },
+            {
+                "id": 32715900,
+                "username": "sbvsbv",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "acc genius",
+        "flag": "KTM2",
+        "seed": 27,
+        "players": [
+            {
+                "id": 17687775,
+                "username": "Reiketsune",
+                "captain": true
+            },
+            {
+                "id": 8205933,
+                "username": "JIELLI_",
+                "captain": false
+            },
+            {
+                "id": 14367718,
+                "username": "Prikolist",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "Pivasik",
+        "flag": "KTM3",
+        "seed": 12,
+        "players": [
+            {
+                "id": 14506525,
+                "username": "nikel8",
+                "captain": true
+            },
+            {
+                "id": 10653461,
+                "username": "legosys",
+                "captain": false
+            },
+            {
+                "id": 14823527,
+                "username": "dulat1",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "gde bigblack na tb",
+        "flag": "KTM4",
+        "seed": 35,
+        "players": [
+            {
+                "id": 30112602,
+                "username": "Isj Jeami",
+                "captain": true
+            },
+            {
+                "id": 18735106,
+                "username": "Leucivon",
+                "captain": false
+            },
+            {
+                "id": 18635285,
+                "username": "volodimir_",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "Doner na Abaya",
+        "flag": "KTM5",
+        "seed": 28,
+        "players": [
+            {
+                "id": 12441857,
+                "username": "nuriik",
+                "captain": true
+            },
+            {
+                "id": 21155769,
+                "username": "crazykirill",
+                "captain": false
+            },
+            {
+                "id": 11503002,
+                "username": "gclv",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "Doner na Satpayeva",
+        "flag": "KTM6",
+        "seed": 10,
+        "players": [
+            {
+                "id": 14003294,
+                "username": "Skvidos",
+                "captain": true
+            },
+            {
+                "id": 11381786,
+                "username": "ChannelWing",
+                "captain": false
+            },
+            {
+                "id": 11275085,
+                "username": "deathplayer",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "Wonderhoy",
+        "flag": "KTM7",
+        "seed": 36,
+        "players": [
+            {
+                "id": 9569443,
+                "username": "Fuwarin",
+                "captain": true
+            },
+            {
+                "id": 34657622,
+                "username": "kwiinzzx",
+                "captain": false
+            },
+            {
+                "id": 32097684,
+                "username": "BikutaPankeki",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "ZHIMERS Airlines",
+        "flag": "KTM8",
+        "seed": 26,
+        "players": [
+            {
+                "id": 9035496,
+                "username": "XCENAX",
+                "captain": true
+            },
+            {
+                "id": 19093002,
+                "username": "Aronxzz",
+                "captain": false
+            },
+            {
+                "id": 11158213,
+                "username": "ruwbine",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "A u nas est' ayan",
+        "flag": "KTM9",
+        "seed": 14,
+        "players": [
+            {
+                "id": 7595619,
+                "username": "Lightin",
+                "captain": true
+            },
+            {
+                "id": 24658561,
+                "username": "ikigatsumaru",
+                "captain": false
+            },
+            {
+                "id": 14301321,
+                "username": "ayanayan132412",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "chinazez",
+        "flag": "KTM10",
+        "seed": 33,
+        "players": [
+            {
+                "id": 15684898,
+                "username": "tolik_nyash",
+                "captain": true
+            },
+            {
+                "id": 23069854,
+                "username": "I L0VE AD0",
+                "captain": false
+            },
+            {
+                "id": 19098673,
+                "username": "Doshd",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "Chill Guys",
+        "flag": "KTM11",
+        "seed": 24,
+        "players": [
+            {
+                "id": 9713002,
+                "username": "worst KZ player",
+                "captain": true
+            },
+            {
+                "id": 16967140,
+                "username": "daisuke-",
+                "captain": false
+            },
+            {
+                "id": 13666131,
+                "username": "daraptd",
+                "captain": false
+            }
+        ]
+    },
+    {
+        "team": "OurAngelJRoshyn",
+        "flag": "KTM12",
+        "seed": 17,
+        "players": [
+            {
+                "id": 10360432,
+                "username": "Ch0knyt",
+                "captain": true
+            },
+            {
+                "id": 20629395,
+                "username": "emo4kapro",
+                "captain": false
+            },
+            {
+                "id": 35659324,
+                "username": "1987kostya",
+                "captain": false
+            }
+        ]
+    }
+]

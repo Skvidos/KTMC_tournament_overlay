@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../_shared/common.css">
+	<script src="../_shared/deps/reconnecting-websocket.min.js"></script>
+	<script src="../_shared/deps/jquery.min.js"></script>
+	<script src="../_shared/utils.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<div class="header" id="header">
+			<div class="custom textbox" id="custom"><span>CUSTOM MAP BY</span><span class="custom-mapper" id="custom_mapper"></span></div>
+			<div class="header-item replayer"><span>REPLAY BY</span><span id="replayer" class="header-item__value"></span></div>
+		</div>
+		<div class="footer">
+			<div class="map-background-container">
+				<div class="map-mods"><span id="now_playing"></span></div>
+				<div class="map-background" id="map_background"></div>
+			</div>
+			<div class="map-stats-container">
+				<div class="map-stats-background" id="map_stats_background"></div>
+				<div class="map-stats">
+					<div class="map-stats-title">
+						<div class="map-stats-title__item title-top">
+							<span id="artist"></span> - <span id="title"></span>
+						</div>
+						<div class="map-stats-title__item title-bottom">
+							[<span id="difficulty"></span>] by <span id="mapper"></span>
+						</div>
+					</div>
+					<div class="map-stats-attributes">
+						<div class="map-stats-attributes__item"><span>CS</span><span id="cs"
+								class="map-stats-attributes__item-value"></span></div>
+						<div class="map-stats-attributes__item"><span>AR</span><span id="ar"
+								class="map-stats-attributes__item-value"></span></div>
+						<div class="map-stats-attributes__item"><span>OD</span><span id="od"
+								class="map-stats-attributes__item-value"></span></div>
+						<div class="map-stats-attributes__item"><span>BPM</span><span id="bpm"
+								class="map-stats-attributes__item-value"></span></div>
+						<div class="map-stats-attributes__item"><span>LENGTH</span><span id="length"
+								class="map-stats-attributes__item-value"></span></div>
+						<div class="map-stats-attributes__item"><span>SR</span><span id="sr"
+								class="map-stats-attributes__item-value"></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="logo"></div>
+		</div>
+		<div class="stage-name textbox" id="stage_name">SEMIFINALS MAPPOOL SHOWCASE</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>

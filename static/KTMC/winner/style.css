@@ -1,0 +1,162 @@
+body,
+html {
+	padding: 0;
+	margin: 0;
+	overflow-y: hidden;
+	font-family: 'Din';
+}
+
+.main {
+	position: relative;
+	width: 1920px;
+	height: 1080px;
+	background-image: url('../_shared/assets/bg_corners.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--accent);
+	font-size: 2rem;
+}
+
+.logo {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 200px;
+	height: 100px;
+	background-image: url('../_shared/assets/logo_light_512.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.title {
+	font-style: italic;
+}
+
+.match-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.teams {
+	display: flex;
+	color: var(--light);
+}
+
+.team {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.scores {
+	padding: 0 24px;
+	display: flex;
+	gap: 15px;
+	font-size: 3rem;
+	line-height: 6rem;
+}
+
+.score {
+	font-weight: 700;
+}
+
+.team-header {
+	font-weight: 700;
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+}
+
+.team.blue {
+	align-items: flex-end;
+	text-align: right;
+}
+
+.team-flag {
+	width: 70px;
+	height: 47px;
+	background-image: url('../_shared/assets/flags/XX.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team-players {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	font-size: 1.6rem;
+}
+
+.team-players.red {
+	padding-left: calc(70px + 18px);
+}
+
+.team-players.blue {
+	padding-right: calc(70px + 18px);
+}
+
+.timer {
+	font-size: 3rem;
+	margin-top: 12px;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.song-container {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	font-size: 1.7rem;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.song-title-container {
+	display: flex;
+	gap: 8px;
+	opacity: 1;
+	transition: opacity 300ms ease;
+}
+
+.note {
+	font-size: 2rem;
+}
+
+.song-title {
+	max-width: 800px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: 0px;
+	visibility: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	visibility: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: grey;
+	border-radius: 10px;
+}

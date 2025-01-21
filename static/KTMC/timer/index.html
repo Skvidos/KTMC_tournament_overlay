@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../_shared/common.css">
+	<script src="../_shared/deps/reconnecting-websocket.min.js"></script>
+	<script src="../_shared/deps/jquery.min.js"></script>
+	<script src="../_shared/utils.js"></script>
+</head>
+
+<body>
+	<div class="main">
+
+		<div class="overlay"></div>
+		<div id="map_background" class="map-background"></div>
+
+		<div class="header">
+			<div class="header-logo"></div>
+		</div>
+
+		<div class="content">
+			<div class="content-text">
+				Стрим начнётся через: 
+				<div id="timer" class="timer"></div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="map-stats-container">
+				<div class="map-stats-background"></div>
+				<div class="map-stats">
+					<div class="map-song-preview" id="map_song_background"></div>
+					<div class="map-stats-title">
+						<div class="map-stats-title__item title-top">
+							<span class="map-stats-text">Сейчас играет: <br> </span>
+							<span id="artist"></span> - <span id="title"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="logo"></div>
+		</div>
+
+		<div class="timer_block">
+			<div class="timer_block1">
+				<label for="datetime" class="timer_label2">Выберите дату и время:</label>
+				<input type="datetime-local" id="datetime" class="timer_input">
+				<button onclick="startTimer()" class="timer_button">Начать таймер</button>
+				<button onclick="resetTimer()" class="timer_button">Сбросить таймер</button>
+				<div id="error" class="error"></div>
+			</div>
+			<div class="timer_block2">
+				<label for="datetime" class="timer_label2">Быстрый таймер:</label>
+				<div class="quick_buttons">
+					<button onclick="setQuickTimer(5)" class="timer_button">5 мин</button>
+					<button onclick="setQuickTimer(10)" class="timer_button">10 мин</button>
+					<button onclick="setQuickTimer(15)" class="timer_button">15 мин</button>
+					<button onclick="setQuickTimer(20)" class="timer_button">20 мин</button>
+					<button onclick="setQuickTimer(25)" class="timer_button">25 мин</button>
+					<button onclick="setQuickTimer(30)" class="timer_button">30 мин</button>
+				</div>
+			</div>
+				
+		</div>
+	</div>
+	
+	<script src="index.js"></script>
+</body>
+
+</html>

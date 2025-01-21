@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../_shared/common.css">
+	<script src="../_shared/deps/reconnecting-websocket.min.js"></script>
+	<script src="../_shared/deps/jquery.min.js"></script>
+	<script src="../_shared/utils.js"></script>
+</head>
+
+<body>
+	<div class="main">
+
+		<div class="overlay"></div>
+		<div id="map_background" class="map-background"></div>
+
+		<div class="header">
+			<div class="header-left">
+				<div class="header-text_left">KTM Draft Cup</div>
+			</div>
+			<div class="header-logo"></div>
+			<div class="header-right">
+				<div class="header-text_right">Drafts</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="content-right-inner">
+				<div class="content-right">
+					<div class="players-title">Игроки</div>
+					<div class="player-block">
+	
+						<div class="player-header">
+							<div class="player-seed_text">Сид</div>
+							<div class="player-name_text">Игрок</div>
+							<div class="player-seed_text">Сид</div>
+							<div class="player-name_text">Игрок</div>
+						</div>
+	
+						<div class="player-list_block">
+							<div class="player-list">
+								<div class="player-item">
+									<div class="player-seed">#1</div>
+									<div class="player-name">Leucivon</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#2</div>
+									<div class="player-name">emo4kapro</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#3</div>
+									<div class="player-name">I L0VE AD0</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#4</div>
+									<div class="player-name">ikigatsumaru</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#5</div>
+									<div class="player-name">JIELLI_</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#6</div>
+									<div class="player-name">crazykirill</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#7</div>
+									<div class="player-name">neilyas</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#8</div>
+									<div class="player-name">Aronxzz</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#9</div>
+									<div class="player-name">daisuke-</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#11</div>
+									<div class="player-name">legosys</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#13</div>
+									<div class="player-name">Prikolist</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#15</div>
+									<div class="player-name">ChannelWing</div>
+								</div>
+							</div>
+	
+							<div class="player-list">
+								<div class="player-item">
+									<div class="player-seed">#16</div>
+									<div class="player-name">Fuwarin</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#18</div>
+									<div class="player-name">gclv</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#19</div>
+									<div class="player-name">Doshd</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#20</div>
+									<div class="player-name">ruwbine</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#21</div>
+									<div class="player-name">sbvsbv</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#22</div>
+									<div class="player-name">volodimir_</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#23</div>
+									<div class="player-name">BikutaPankeki</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#25</div>
+									<div class="player-name">deathplayer</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#29</div>
+									<div class="player-name">dulat1</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#31</div>
+									<div class="player-name">1987kostya</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#32</div>
+									<div class="player-name">ayanayan132412</div>
+								</div>
+	
+								<div class="player-item">
+									<div class="player-seed">#34</div>
+									<div class="player-name">daraptd</div>
+								</div>
+							</div>
+					</div>
+	
+					</div>
+				</div>
+				<div class="content-discord">
+					<div class="discord-title">Пики </div>
+					<div class="discord"></div>
+				</div>
+			</div>
+			<div class="content-left">
+				<div class="group-title">Группы</div>
+				<div class="group-container">
+					<div class="group-container-inner">
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#36</div>
+								<div class="group-captain">kwiinzzx</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#35</div>
+								<div class="group-captain">Isj Jeami</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#33</div>
+								<div class="group-captain">tolik_nyash</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#30</div>
+								<div class="group-captain">just_remo4ka</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+					</div>
+
+					<div class="group-container-inner">
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#28</div>
+								<div class="group-captain">nuriik</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#27</div>
+								<div class="group-captain">Reiketsune</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#26</div>
+								<div class="group-captain">XCENAX</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#24</div>
+								<div class="group-captain">worst KZ player</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+					</div>
+
+					<div class="group-container-inner">
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#17</div>
+								<div class="group-captain">Ch0knyt</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#14</div>
+								<div class="group-captain">Lightin</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#12</div>
+								<div class="group-captain">nikel8</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+						<div class="group-block">
+							<div class="group_name">
+								<div class="group-seed">#10</div>
+								<div class="group-captain">Skvidos</div>
+							</div>
+
+							<div class="group-teammates">
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+								<div class="group-teammate">
+									<div class="group-teammate_seed">&nbsp</div>
+									<div class="group-teammate_name">&nbsp</div>
+								</div>
+
+							</div>	
+						</div>
+
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="map-stats-container">
+				<div class="map-stats-background"></div>
+				<div class="map-stats">
+					<div class="map-song-preview" id="map_song_background"></div>
+					<div class="map-stats-title">
+						<div class="map-stats-title__item title-top">
+							<span class="map-stats-text">Сейчас играет: <br> </span>
+							<span id="artist"></span> - <span id="title"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="logo"></div>
+		</div>
+
+		<div class="add_block">
+			<div class="add_block1">
+				<label for="datetime" class="add_label2">Отмена действия:</label>
+				<button id="undo-button" class="add_button">Галя отмена!</button>
+			</div>
+			</div>
+				
+		</div>
+	</div>
+	
+	<script src="index.js"></script>
+</body>
+
+</html>
